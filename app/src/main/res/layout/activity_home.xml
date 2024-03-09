@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif"
+        android:text="Welcome!!Find your Comfortable place"
+        android:textColor="#682323"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="315dp"
+        android:layout_height="36dp"
+        android:layout_alignEnd="@+id/username"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="3dp"
+        android:background="@drawable/bg_search"
+        android:ems="10"
+        android:padding="16dp"
+        android:inputType="text"
+        android:textColorHint="@color/material_dynamic_neutral_variant50"
+        android:hint="Search here..."
+        android:drawableStart="@drawable/baseline_search_24"/>
+
+    <ImageView
+        android:id="@+id/rec_thumbnail"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="198dp"
+        android:background="@drawable/r1"
+        android:clickable="true"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/rec_title"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rec_thumbnail"
+         />
+
+    <TextView
+        android:id="@+id/rec_location"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rec_title"
+        android:textColor="@color/material_dynamic_neutral0"
+        android:paddingLeft="@dimen/material_emphasis_medium"
+        android:paddingRight="@dimen/material_emphasis_medium"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/rec_rating"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rec_location"
+
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="106dp"
+        android:paddingLeft="@dimen/material_emphasis_medium"
+        android:paddingRight="@dimen/material_emphasis_medium"
+        android:paddingBottom="@dimen/material_emphasis_medium"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/rec_features"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/material_dynamic_neutral_variant99"
+
+        android:layout_below="@id/rec_rating"
+        android:paddingLeft="@dimen/cardview_compat_inset_shadow"
+        android:paddingRight="@dimen/material_emphasis_disabled_background"
+        android:paddingBottom="@dimen/cardview_default_elevation"
+        android:textSize="@dimen/material_emphasis_medium"
+        card_view:fontFamily="sans-serif-black" />
+
+    <Button
+        android:id="@+id/rec_viewbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rec_features"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="139dp"
+        android:background="@drawable/bg_search"
+        android:scaleType="centerCrop"
+        android:text="View"
+
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:typeface="monospace" />
+</RelativeLayout>
+
+
